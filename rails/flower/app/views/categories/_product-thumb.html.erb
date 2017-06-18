@@ -1,0 +1,32 @@
+ 
+ <div class="product-thumb">
+  <div class="image">
+    <a class="lazy lazy-loaded" style="padding-bottom: 100%" href="/products/<%= product.id%>"> 
+      <img alt="Autumn Shades Perfect Gift" title="Autumn Shades Perfect Gift" class="img-responsive" data-src="" src="http://livedemo00.template-help.com/opencart_55697_v1/image/cache/catalog/product-4-270x270.png"> 
+    </a>
+    <div class="stickers">
+      <div class="sale">sale</div>
+    </div>
+  </div>
+  <div class="caption">
+    <div class="name"><a href="/products/<%= product.id%>"><%= product.name%> </a></div>
+    <div class="description"></div>
+    <div class="description-small"><%= product.description %></div>
+    <div class="price price-product">
+      <span class="price-new">$25.60</span> <span class="price-old">$32.00</span>
+    </div>
+    <div class="cart-button">
+      <button class="btn btn-add" type="button" onclick="cart.add('29');">
+       
+        <span>Add to Cart</span>
+      </button>                    
+    </div>
+    <div class="rating" style="margin-top:15px">
+      <span class="fa-stack"><i class="fa fa-star-o"></i></span>
+      <span class="fa-stack"><i class="fa fa-star-o"></i></span>
+      <span class="fa-stack"><i class="fa fa-star-o"></i></span>
+      <span class="fa-stack"><i class="fa fa-star-o"></i></span>
+      <span class="fa-stack"><i class="fa fa-star-o"></i></span>
+    </div>
+  </div>
+</div>

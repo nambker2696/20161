@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  color: MyString
+  type: 
+  product_id: 1
+  code: MyString
+
+two:
+  color: MyString
+  type: 
+  product_id: 1
+  code: MyString

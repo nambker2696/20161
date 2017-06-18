@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini">
+    <%= render 'layouts/admin' %>
+    <!-- jQuery 2.2.3 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<%= javascript_include_tag 'application', media: 'all','data-turbolinks-track': 'reload' %>
+
+
+  </body>
+
+</html>

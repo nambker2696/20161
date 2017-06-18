@@ -1,0 +1,84 @@
+<header class="header">
+  <div class="top-block">
+    <div id="stuck" class="top-menu scroll-fix" style="">
+        <div class="container">
+          <nav id="top-links" class="nav">
+            <ul class="list-inline">
+              <li><a href="/login">My account</a></li>
+              <li><a href="" id="wishlist-total" title="My wishlist"><span>My wishlist</span></a></li>
+              <li><a href="/checkout" title="Checkout"><span>Checkout</span></a> </li>
+              <li><a href="/login"><span>Log in</span></a></li>
+            </ul>
+          </nav>
+          <div id="search" class="search">      
+              <div class="search-block">
+              <button type="button" class="button-search">
+              <i class="fl-budicons-launch-search81"></i></button><input name="search" value="" placeholder="Search" type="text">
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stuck" class="top-menu" style="visibility: hidden; height: 39px;">
+      
+    </div>
+    <div class="container">
+      <div id="logo" class="logo">    
+        <a href="/">
+        <%= image_tag "logo.png", :class => "img-responsive" %>
+      </div>
+
+      <div class="box-cart">
+        <div id="cart" class="cart" >
+          <li><a href="/shoppingcart"><i class="fa fa-cart-arrow-down fa-4x" aria-hidden="true" ></i> </a></li>
+        </div>
+      </div>
+
+      <div id="stuck" class="stuck-menu">
+        <div class="navigation">
+          <div class="container">
+            <div class="megamenu">
+              <ul class="sf-menu sf-js-enabled sf-arrows">
+                <li>
+                  <%= link_to "Corporate", category_path(1) %>
+                </li>
+
+                <li class="sf-with-mega">
+                  <%= link_to "Love & Romance", category_path(2), class: "sf-with-ul" %>
+                </li>
+                <li>
+                  <%= link_to "Sympathy", category_path(3) %>
+                </li>
+                <li>
+                  <%= link_to "New Baby", category_path(4) %>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <script>
+              ;(function ($) {
+                $(window).load(function () {
+                  var o = $('.sf-menu');
+                  o.superfish();
+                  o.find('li a').each(function () {
+                    if ($(location).attr('href').indexOf($(this).attr('href')) >= 0){
+                      $(this).addClass('active');
+                      return;
+                    }
+                  })
+                  if (o.parents('aside').length){
+                    var width = $('.container').outerWidth() - $('aside').outerWidth();
+                    o.find('.sf-mega').each(function () {
+                      $(this).width(width);
+                    })
+                  }
+                });
+              })(jQuery);
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+

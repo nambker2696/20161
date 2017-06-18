@@ -1,0 +1,108 @@
+
+<%= render 'static_pages/top' %>
+<div id="container">
+	<div class="container">
+		<div class="row">
+			<div id="content" class="col-sm-12">
+				<div id="tm-newsletter-popup" class="newsletter-popup-wrap" style="display: none;">
+					<div class="newsletter-popup" style="background-image: url(http://livedemo00.template-help.com/opencart_55697_v1/image/cache/catalog/newsletter-bg-630x295.jpg)">
+						<div class="box-content">
+							<h4>Newsletter</h4>
+							<p>Subscribe to the Flowers Store mailing list to receive updates on new arrivals, special offers and other discount information.</p>
+							<form method="post" enctype="multipart/form-data" id="tm-newsletter-popup-form">
+								<div class="tm-login-form">
+									<label class="control-label" for="input-email"></label>
+									<div class="clear"></div>
+									<input name="tm_newsletter_popup_email" value="" placeholder="Enter your e-mail" id="input-tm-newsletter-popup-email" class="form-control" type="text">
+									<div class="clear"></div>
+									<button type="submit" id="tm-newsletter-popup-button" class="newsletter-popup-btn">Subscribe</button>
+									<div class="clear"></div>
+									<span id="tm-newsletter-popup_error" class="newsletter-error"></span>
+									<span id="tm-newsletter-popup_success" class="newsletter-success"></span>
+								</div>
+							</form>
+						</div>
+						<button type="button" id="newsletter-popup-close-btn" class="newsletter-popup-close-btn"><i class="material-design-close47"></i></button>
+					</div>
+				</div>
+				<script>
+			        function getCookie(c_name) {
+			            if (document.cookie.length > 0) {
+			                c_start = document.cookie.indexOf(c_name + "=");
+			                if (c_start != -1) {
+			                    return true;
+			                }
+			            }
+			            return false;
+			        }
+
+
+			        jQuery(document).ready(function ($) {
+			            var showIt = getCookie('shownewsletter');
+			            var m = 15;
+			            var date = new Date();
+			            date.setTime(date.getTime() + (m * 60 * 1000));
+			            if (!showIt) {
+			                $('#tm-newsletter-popup').fadeIn(300);
+			            }
+			            document.cookie = 'shownewsletter=true; path=/; expires=' + date.toString();
+			            $('#newsletter-popup-close-btn').click(function () {
+			                $('#tm-newsletter-popup').fadeOut(300);
+			            })
+			            $('#tm-newsletter-popup').submit(function (e) {
+			                e.preventDefault();
+			                var email = $("#input-tm-newsletter-popup-email").val();
+			                var emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/igm;
+			                if (emailRegex.test(email)) {
+			                    var dataString = 'tm_newsletter_popup_email=' + email;
+			                    $.ajax({
+			                        type: "POST",
+			                        url: "index.php?route=module/tm_newsletter_popup",
+			                        data: dataString,
+			                        cache: false,
+			                        success: function (result) {
+			                            if (!result) {
+			                                $('#tm-newsletter-popup_success').html('You have successfully subscribed').fadeIn(300).delay(4000).fadeOut(300);
+			                            } else {
+			                                $('#tm-newsletter-popup_error').dequeue();
+			                                $('#tm-newsletter-popup_error').html(result).fadeIn(300).delay(4000).fadeOut(300);
+			                            }
+			                        }
+			                    });
+			                } else {
+			                    $('#tm-newsletter-popup_error').html('Please enter a valid e-mail!').fadeIn(300).delay(4000).fadeOut(300);
+			                }
+			            });
+
+
+			        });
+			    </script>
+				<div class="box featured">
+					<div class="box-heading">
+						<h3>Featured</h3>
+					</div>
+					<div class="box-content">
+						<%= render 'static_pages/box-content' %>
+						<%= render 'static_pages/box-content' %>
+						<%= render 'static_pages/box-content' %>
+						<%= render 'static_pages/box-content' %>
+					</div>
+				</div>
+				<div class="box specials">
+					<div class="box-heading">
+						<h3>
+							Specials
+						</h3>
+					</div>
+					<div class="box-content">
+						<%= render 'static_pages/box-content' %>
+						<%= render 'static_pages/box-content' %>
+						<%= render 'static_pages/box-content' %>
+						<%= render 'static_pages/box-content' %>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</div>
+</div>
+<%= render 'static_pages/bottom' %>

@@ -1,0 +1,276 @@
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#default_gallery .product-image {
+    width: 80%;
+    padding: 0;
+}
+.product-gallery .product-image {
+    cursor: pointer;
+    float: left;
+    width: 84%;
+    padding-left: 15px;
+}
+.product-thumb .quickview {
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+    right: 25px;
+    display: inline-block;
+    color: #cacfde;
+    font-size: 35px;
+    line-height: 25px;
+    height: 25px;
+    overflow: hidden;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    opacity: 0;
+}
+.product-layout > div {
+    margin-bottom: 30px;
+    transform: none !important;
+    -moz-transform: none !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+}
+.product-thumb {
+    position: relative;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+.product-thumb {
+    overflow: hidden;
+    padding: 17px 17px 30px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 10px #f4f4f4;
+    -moz-box-shadow: 0 1px 10px #f4f4f4;
+    box-shadow: 0 1px 10px #f4f4f4;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    margin-top: 9px;
+    margin-bottom: 11px;
+}
+.product-thumb .quickview i {
+    height: 25px;
+    display: inline-block;
+}
+
+aside .box .box-heading {
+    text-align: left;
+}
+.product-thumb .rating, .fancybox-inner .rating {
+    margin-bottom: 10px;
+    position: relative;
+    letter-spacing: -.4px;
+    line-height: 0;
+    height: 15px;
+    width: 100%;
+}
+.product-section, .product-content-columns {
+    margin-bottom: 30px;
+}
+#default_gallery .image-thumb {
+    float: left;
+    padding: 0 1em 0 0;
+    width: 16.5%;
+}
+.product-gallery .image-thumb {
+    float: left;
+    width: 16.5%;
+}
+
+.product-gallery .bx-wrapper {
+    margin: 0 !important;
+}
+.product-gallery .image-thumb li a:hover, .product-gallery .image-thumb li a.active {
+    border-color: #f4b956;
+}
+.product-image .polaroid {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+.polaroid {
+    background: white;
+    padding: 4px;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+    color: 0 0 1px rgba(0, 0, 0, 0.25);
+}
+.product-info {
+    font-size: 14px;
+    color: #737373;
+}
+.product-title {
+    margin: 0 0 15px;
+}
+.product-info .rating-section {
+    margin-bottom: 10px;
+}
+.rating {
+    line-height: 23px;
+}
+.rating i {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 13px;
+    color: #c6c6c6;
+}
+.rating-section a {
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.rating a {
+    letter-spacing: 0;
+}
+.product-info a {
+    color: #3f3f4d;
+}
+.general_info .product-section, .general_info .price-section {
+    margin: 0 0 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.price-section .price-new, .price-section .price-old {
+    font-size: 30px;
+    color: #f4b956;
+    line-height: 36px;
+}
+.price-section .price-old {
+    color: #989898;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#product h3 {
+    margin-top: 10px;
+}
+#product .form-group.required {
+    position: relative;
+}
+.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+}
+.form-horizontal .checkbox, .form-horizontal .radio {
+    min-height: 27px;
+}
+.checkbox label, .radio label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+div.required .control-label::before {
+    content: '* ';
+    color: #F00;
+    font-weight: 600;
+}
+.product_page #product .form-horizontal .btn {
+    position: relative;
+    overflow: hidden;
+}
+.product_page #button-cart {
+    width: 100%;
+    margin-bottom: 0;
+}
+.product_tabs::before, .product_tabs::after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.product_tabs {
+    margin: 50px 0;
+}
+.product_tabs .nav-tabs {
+    width: 30%;
+    float: left;
+    border: 0;
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+}
+.product_tabs .nav-tabs > li {
+    float: none;
+    margin-bottom: 2px;
+}
+.product_tabs .nav-tabs > li.active > a {
+    color: #f4b956;
+}
+.product_tabs .nav-tabs > li > a {
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
+    background: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    border: 0;
+    margin-right: 0;
+    color: #333;
+    position: relative;
+    z-index: 0;
+    -webkit-box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.09);
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.09);
+}
+.product_tabs .nav-tabs > li.active > a::before {
+    right: -2px;
+    border: 0;
+}
+.product_tabs .nav-tabs > li > a::before {
+    content: '';
+    position: absolute;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
+    left: 0;
+    right: 100%;
+    background: #fff;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+.product_tabs .tab-content {
+    width: 70%;
+    float: left;
+    position: relative;
+    padding: 40px 40px 10px 40px;
+    -webkit-border-radius: 0 10px 10px 10px;
+    -moz-border-radius: 0 10px 10px 10px;
+    border-radius: 0 10px 10px 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.09);
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.09);
+}
+.tab-content > .active {
+    display: block;
+}
+.tab-content > .tab-pane {
+    display: none;
+}
+.product-section, .product-content-columns {
+    margin-bottom: 30px;
+}
+.product_tabs::after {
+    clear: both;
+}

@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <section class="content">
+      <h1>List products</h1>
+      <div class="col-md-10">
+        <div class="panel panel-default">
+          <div class="panel-body">
+
+            <div class="table-container">
+              <table class="table table-filter">
+                <tbody>
+                  <% @products.each do |product| %>
+                  <tr data-status="pagado">
+                    <td>
+                      <div class="ckbox">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="products/<%= product.id %>" class="star">
+                        <i class="glyphicon glyphicon-star"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <div class="media">
+                        <%=link_to(image_tag product.image, :class=>"work", :size => "128x128") %>
+                        <div class="media-body">
+                          <h4 class="title">
+                            <%= product.name %>
+                            <span class="pull-right pagado">(<%= product.category_id %>)</span>
+                          </h4>
+                          <p class="summary"><%= product.description %></p>
+                        </div>
+
+                      </div>
+                    </td>
+                    <td>
+                    <a href="products/<%= product.id %>" type="button" class="btn btn-success btn-filter" style="width: 80px">Views</a>
+                    <a href="" type="button" class="btn btn-warning btn-filter" style="width: 80px">Edit </a>
+                    <a href="" type="button" class="btn btn-danger btn-filter" style="width: 80px">Delete</a>
+                    </td>
+                    <% end %>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>

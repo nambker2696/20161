@@ -1,0 +1,230 @@
+// Place all the styles related to the Categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.product-filter {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.product-filter label {
+    font-size: 13px;
+    padding-top: 7px;
+}
+#list-view.active, #grid-view.active, #list-view:hover, #grid-view:hover {
+    color: #f2af3e;
+}
+#list-view, #grid-view {
+    padding: 0;
+    margin: 0 5px;
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #f66875;
+    font-size: 27px;
+    line-height: 30px;
+}
+.product-list.product-layout > div {
+    margin-bottom: 20px;
+}
+.product-list .product-thumb {
+    text-align: left;
+}
+.product-layout > div {
+    margin-bottom: 30px;
+    transform: none !important;
+    -moz-transform: none !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+}
+.product-thumb {
+    position: relative;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+.product-thumb {
+    overflow: hidden;
+    padding: 17px 17px 30px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 10px #f4f4f4;
+    -moz-box-shadow: 0 1px 10px #f4f4f4;
+    box-shadow: 0 1px 10px #f4f4f4;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    margin-top: 9px;
+    margin-bottom: 11px;
+}
+.product-list .product-thumb .image {
+    overflow: hidden;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    width: 33%;
+    max-width: 236px;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+.product-thumb .image {
+    margin-bottom: 1px;
+    overflow: hidden;
+}
+.product-thumb .image {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.product-thumb .image a {
+    background: #fff;
+}
+.product-thumb .image > a {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.lazy.lazy-loaded {
+    background: none;
+}
+.lazy {
+    display: block;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    background: transparent url(../image/lazy-loader.gif) no-repeat center center;
+}
+.product-thumb .image > a img {
+    margin: 0 auto;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+.lazy.lazy-loaded img {
+    opacity: 1;
+}
+.lazy img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    -moz-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease;
+    opacity: 0;
+}
+.stickers {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    top: 13px;
+    left: 14px;
+}
+.sale, .new_pr {
+    position: relative;
+    pointer-events: none;
+    color: #fff;
+    background: #f4b956;
+    font: bold 14px/16px "Open Sans", sans-serif;
+    padding: 10px 5px 9px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: top;
+    width: 69px;
+    height: 35px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+}
+
+.product-list .product-thumb .caption, .product-list .product-thumb .cart-button {
+    overflow: hidden;
+}
+
+.product-thumb .name {
+    min-height: 49px;
+    line-height: 49px;
+    margin-bottom: 16px;
+}
+.name {
+    color: #3f3f4d;
+    font: 300 19px/23px "Open Sans", sans-serif;
+}
+.product-thumb .name a {
+    display: inline-block;
+    line-height: 23px;
+    vertical-align: middle;
+}
+.name a {
+    color: #3f3f4d;
+}
+.product-thumb .description, .product-thumb .description-small {
+    margin-bottom: 21px;
+}
+.description-small, .description {
+    color: #737373;
+}
+.price {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.price-new, .price-old, .price {
+    display: inline-block;
+    font: 400 24px/29px "Open Sans", sans-serif;
+    color: #f67076;
+}
+.price-new {
+    margin-right: 5px;
+    font-weight: bold;
+}
+.price-old {
+    text-decoration: line-through;
+    color: #c6c6c6;
+    font: 400 16px/19px "Open Sans", sans-serif;
+}
+.btn-add {
+    padding: 10px 14px 11px;
+    line-height: 24px;
+}
+.btn-add, .btn-primary, .newsletter-popup-btn {
+    color: #fff;
+}
+.btn-add i {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    height: 24px;
+    color: #fff;
+    margin-right: 5px;
+    vertical-align: top;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+.product-list .product-thumb .cart-button button + div {
+    margin-left: 5px;
+}
+.product-thumb .cart-button > div {
+    display: inline-block;
+    vertical-align: top;
+}
+.name a:hover, .name a:active, .name a:focus {
+    color: #f66875;
+}
+.product-thumb:hover {
+    -webkit-box-shadow: 0 1px 10px rgba(244, 185, 86, 0.33);
+    -moz-box-shadow: 0 1px 10px rgba(244, 185, 86, 0.33);
+    box-shadow: 0 1px 10px rgba(244, 185, 86, 0.33);
+}

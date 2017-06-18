@@ -1,0 +1,85 @@
+// Place all the styles related to the Cart controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.panel-default > .panel-heading {
+    background-color: #e9edee;
+    border-color: #fff;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #586077;
+}
+.panel-default > .panel-heading {
+    background-color: #e9edee;
+    border-color: #fff;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #586077;
+}
+.panel-default > .panel-heading a {
+    color: #586077;
+}
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}   
+.table-bordered .img-thumbnail {
+    background-color: transparent;
+}
+
+.img-thumbnail {
+    border: 0;
+    background-color: #fff;
+    padding: 0;
+    border-radius: 0;
+}
+.material-design-horizontal39::before {
+    content: "\e0bb";
+}
+.clearfix::before, .clearfix::after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.clearfix::after {
+    clear: both;
+}
+.material-design-add186::before {
+    content: "\e007";
+}
+.material-design-rubbish::before {
+    content: "\e132";
+}
+.material-design-ico, [class^="material-design-"]::before, [class*=" material-design-"]::before, [class^="material-design-"]::after, [class*=" material-design-"]::after {
+    font-family: "material-design";
+    font-size: inherit;
+    font-weight: 400;
+    font-style: normal;
+}
+.panel-default > .panel-heading a:hover, .panel-default > .panel-heading a:focus, .panel-default > .panel-heading a:active {
+    color: #f4b956;
+}
+.panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
+    color: inherit;
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+input#input-voucher, input#input-coupon {
+    display: inline-block;
+    width: 45%;
+    margin-right: 5px;
+}
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+}
+.input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+    z-index: 2;
+    margin-left: -1px;
+}
